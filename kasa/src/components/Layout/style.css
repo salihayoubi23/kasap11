@@ -1,0 +1,136 @@
+/*----------------------------------------------*/
+/**  Styles du composant Layout                 */
+/*----------------------------------------------*/
+
+/* Conteneur principal de la page */
+.customLayoutWrapper {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* En-tête de l'application */
+header {
+padding: 0 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Logo de l'en-tête */
+.customLogo {
+width: 210.32px;
+height: 100%;
+}
+
+/* Menu de navigation */
+.customMenu {
+width: 309px;
+display: flex;
+justify-content: flex-end;
+gap: 57px;
+}
+
+/* Élément du menu de navigation */
+.customMenuItem {
+text-decoration: none;
+}
+
+/* Élément actif du menu de navigation */
+.customMenuItem.active {
+text-decoration: underline;
+}
+
+/* Contenu principal de l'application */
+main {
+box-sizing: border-box;
+width: 100%;
+max-width: 1440px;
+margin: 0 auto;
+padding: 0 100px;
+}
+
+/* Pied de page de l'application */
+footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 66px 0 29px;
+}
+
+/* Logo du pied de page */
+footer .customLogo {
+width: 122px;
+}
+
+/* Mention de droits d'auteur */
+footer span {
+margin-top: 28.56px;
+height: 46px;
+display: flex;
+align-items: flex-end;
+}
+
+/** Affichage tablette **************************/
+@media screen and (max-width: 1224px) {
+  /* Styles pour les écrans de largeur maximale 1224px (tablettes) */
+
+  /* Conteneur principal de la page en mode tablette */
+  .customLayoutWrapper {
+      padding-top: 20px;
+  }
+
+  /* En-tête de l'application en mode tablette */
+  header {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* Éléments du menu de navigation en mode tablette */
+  .customMenuItem {
+    font-size: 16px;
+  }
+}
+
+/** Affichage smartphone ************************/
+@media screen and (max-width: 768px) {
+  /* Styles pour les écrans de largeur maximale 768px (smartphones) */
+
+  /* Logo en mode smartphone */
+  .customLogo {
+    width: 145px;
+  }
+
+  /* Menu de navigation en mode smartphone */
+  .customMenu {
+    width: 100%;
+    max-width: 140px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Éléments du menu de navigation en mode smartphone */
+  .customMenuItem {
+    font-size: 12px;
+  }
+
+  /* Contenu principal de l'application en mode smartphone */
+  main {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Pied de page de l'application en mode smartphone */
+  footer {
+    padding: 62px 0;
+  }
+
+  /* Logo du pied de page en mode smartphone */
+  footer .customLogo {
+    width: 122px;
+  }
+
+  /* Mention de droits d'auteur en mode smartphone */
+  footer span {
+    margin-top: 0;
+  }
+}

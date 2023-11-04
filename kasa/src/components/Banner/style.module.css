@@ -1,0 +1,107 @@
+/* Conteneur de la bannière */
+.banner {
+    width: 100%;
+    padding-top: 18%; /* Hauteur de la bannière (18% de la largeur) */
+    border-radius: 25px; /* Coins arrondis de la bannière */
+    position: relative;
+    background: var(--LightBackgroundColor) url("../../assets/images/IMG_ABOUT_PAGE.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Assombrissement de la bannière */
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: var(--DarkBackgroundColor);
+    opacity: 0.3; /* Opacité de l'assombrissement */
+    mix-blend-mode: darken;
+  }
+  
+  /* Conteneur de la bannière avec titre */
+  .bannerWithTitle {
+    composes: banner; /* Réutilisation des styles de .banner */
+    background-image: url("../../assets/images/IMG_HOME_PAGE.png");
+    padding-top: 25%; /* Hauteur de la bannière avec titre */
+  }
+  
+  /* Bannière utilisée avec SlideShow */
+  .bannerSlideShow {
+    composes: banner; /* Réutilisation des styles de .banner */
+    padding-top: 33.47%; /* Hauteur de la bannière pour le diaporama */
+    background-image: none; /* Pas d'image de fond pour le diaporama */
+  }
+  
+  /* Contenu de la bannière Home */
+  .bannerContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--SecondaryColor);
+    font-weight: 500;
+    font-size: 48px; /* Taille de la police du contenu de la bannière */
+  }
+  
+  /* Styles pour les écrans de largeur maximale 1224px (tablettes) */
+  @media screen and (max-width: 1224px) {
+    .banner {
+      border-radius: 18px; /* Coins arrondis réduits pour les tablettes */
+      padding-top: 35%; /* Hauteur de la bannière pour les tablettes */
+    }
+  
+    .banner::before {
+      border-radius: 18px; /* Coins arrondis réduits pour l'assombrissement */
+    }
+  
+    .bannerWithTitle {
+      composes: banner; /* Réutilisation des styles de .banner */
+      padding-top: 25%; /* Hauteur de la bannière pour les tablettes */
+    }
+  
+    .bannerSlideShow {
+      composes: banner; /* Réutilisation des styles de .banner */
+      padding-top: 50%; /* Hauteur de la bannière pour le diaporama sur les tablettes */
+    }
+  
+    .bannerContent {
+      left: 12.5%; /* Décalage du contenu vers la droite pour les tablettes */
+      justify-content: flex-start; /* Alignement du contenu à gauche pour les tablettes */
+    }
+  }
+  
+  /* Styles pour les écrans de largeur maximale 768px (smartphones) */
+  @media screen and (max-width: 768px) {
+    .banner {
+      border-radius: 10px; /* Coins arrondis réduits pour les smartphones */
+      padding-top: 66.57%; /* Hauteur de la bannière pour les smartphones */
+    }
+  
+    .banner::before {
+      border-radius: 10px; /* Coins arrondis réduits pour l'assombrissement */
+    }
+  
+    .bannerWithTitle {
+      composes: banner; /* Réutilisation des styles de .banner */
+      padding-top: 33%; /* Hauteur de la bannière pour les smartphones */
+    }
+  
+    .bannerSlideShow {
+      composes: banner; /* Réutilisation des styles de .banner */
+      padding-top: 76.2%; /* Hauteur de la bannière pour le diaporama sur les smartphones */
+    }
+  
+    .bannerContent {
+      left: 16px; /* Décalage du contenu vers la droite pour les smartphones */
+    }
+  }
+  
