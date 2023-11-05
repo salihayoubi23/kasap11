@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16a85cb5.css",
+    "main.js": "/static/js/main.1554714d.js",
+    "static/media/IMG_HOME_PAGE.png": "/static/media/IMG_HOME_PAGE.bd29b9024d8a24212408.png",
+    "static/media/IMG_ABOUT_PAGE.png": "/static/media/IMG_ABOUT_PAGE.dabd6b5dd54e1e84e59b.png",
+    "static/media/LOGO.svg": "/static/media/LOGO.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/LOGO_WHITE.svg": "/static/media/LOGO_WHITE.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/index.html",
+    "static/media/STAR_LIGHT.svg": "/static/media/STAR_LIGHT.ae969662d77c07fdced4114f41bf3e69.svg",
+    "static/media/STAR_PRIMARY.svg": "/static/media/STAR_PRIMARY.4949d967956f67c591576c1c58b597ba.svg",
+    "static/media/ARROW_UP.svg": "/static/media/ARROW_UP.ecf1488896136f153bb1ae871e39b72d.svg",
+    "static/media/ARROW_FORWARD.svg": "/static/media/ARROW_FORWARD.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/ARROW_BACK.svg": "/static/media/ARROW_BACK.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.16a85cb5.css.map": "/static/css/main.16a85cb5.css.map",
+    "main.1554714d.js.map": "/static/js/main.1554714d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16a85cb5.css",
+    "static/js/main.1554714d.js"
+  ]
+}
