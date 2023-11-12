@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     max-width: 335px; /* Ajustement de la largeur maximale pour les smartphones */
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%) var(--PrimaryColor);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 190%) #FF6060;
     border-radius: 10px;
 }
 

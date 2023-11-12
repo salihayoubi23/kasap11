@@ -6,6 +6,7 @@
 .pageWrapper {
     margin-top: 44px;
 }
+
 /* conteneur des collapses */
 .collapseWrapper {
     width: 82.5%;
@@ -22,11 +23,12 @@
     .pageWrapper {
         margin-top: 17px;
     }
+
     /* conteneur des collapses */
     .collapseWrapper {
         width: 100%;
         margin: 19px 0;
         row-gap: 20px;
-        min-height: 20.563rem;    
+        min-height: 2.563rem;    
     }
 }

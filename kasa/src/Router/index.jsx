@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
-import About from '../../pages/About';
-import Error from '../../pages/Error';
-import AppartementPage from '../../pages/AppartementPage'; 
-import Home from '../../pages/Home';
-import Layout from '../Layout';
+import About from '../pages/About';
+import Error from '../pages/Error';
+import AppartementPage from '../pages/AppartementPage'; 
+import Home from '../pages/Home';
+import Layout from '../components/Layout';
 
 /************************************************/
 //*  Composant Router                           */

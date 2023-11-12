@@ -83,7 +83,7 @@
   @media screen and (max-width: 768px) {
     .banner {
       border-radius: 10px; /* Coins arrondis réduits pour les smartphones */
-      padding-top: 66.57%; /* Hauteur de la bannière pour les smartphones */
+      padding-top: 36.57%; /* Hauteur de la bannière pour les smartphones */
     }
   
     .banner::before {

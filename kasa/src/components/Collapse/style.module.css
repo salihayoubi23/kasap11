@@ -20,7 +20,14 @@
 }
 
 .halfCollapseButton {
-    composes: wideCollapseButton;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 0 47px;
+    padding: 0 0 0 18.08px;
+    border-radius: 5px;
+    cursor: pointer;  
     flex: 0 52px;
     padding-left: 20px;
     font-size: 18px;
@@ -38,7 +45,8 @@
 }
 
 .halfCollapseArrow {
-    composes: wideCollapseArrow;
+    position: absolute;
+    line-height: 0;
     width: 26.4px;
     height: 15.56px;
     top: 17.79px;
@@ -48,11 +56,16 @@
 .openArrowIcon {
     width: 100%;
     height: 100%;  
+    transition: transform 0.8s ease; /* Ajoute une transition de 0.3 seconde avec une fonction de temporisation ease */
+
 }
 
 .closeArrowIcon {
-    composes: openArrowIcon;
+    width: 100%;
+    height: 100%;  
     transform: rotate(180deg);
+    transition: transform 0.5s ease; /* Ajoute une transition de 0.3 seconde avec une fonction de temporisation ease */
+
 }
 
 /* dropdown */
@@ -67,7 +80,11 @@
 }
 
 .halfCollapseContent {
-    composes: wideCollapseContent;
+    margin-top: -9px;
+    flex: 1;
+    font-size: 24px;
+    background-color: var(--LightBackgroundColor);
+    z-index: 1;  
     padding: 40px 12px 27px 20px;
     font-size: 18px;
     border-radius: 0 0 10px 10px;  

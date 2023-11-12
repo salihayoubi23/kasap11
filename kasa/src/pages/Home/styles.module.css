@@ -24,7 +24,7 @@
     justify-content: center;
     row-gap: 50px;
     background-color: var(--LightBackgroundColor);
-    padding: 56px 50px;
+   /* padding: 56px 50px;*/
     margin: 43px auto;
     border-radius: 25px;
 }
